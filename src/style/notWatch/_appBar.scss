@@ -1,0 +1,30 @@
+
+$base-size-padding: 16px;
+$base-color-font: #26252a;
+.nav {
+  .nav-link {
+    padding: $base-size-padding;
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: $base-size-padding;
+    color: $base-color-font;
+    &:not(:last-of-type)::after {
+      content: "|";
+      display: inline;
+      color: #cccccc;
+      font-weight: 600;
+      padding-right: $base-size-padding;
+    }
+  }
+  .nav-link.active {
+    color: #66286a;
+  }
+  .nav-link:first-of-type {
+    padding-right: 0;
+  }
+  .dropdown {
+    @extend .nav-link;
+    padding: 0;
+    padding-top: $base-size-padding - 6;
+  }
+}

@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <app-bar />
+    <HeadAfterBar />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import AppBar from "./components/AppBar.vue";
+import HeadAfterBar from "./components/HeadAfterBar.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    AppBar,
+    HeadAfterBar
   }
 };
 </script>
@@ -20,8 +22,6 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  direction: rtl;
 }
 </style>
