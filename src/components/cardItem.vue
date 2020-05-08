@@ -23,7 +23,7 @@
       <div class="image">
         <img
           class="card-img-top bg-transparent"
-          src="@/assets/images/item.png"
+          :src="imgSrc"
           alt="item new"
         />
       </div>

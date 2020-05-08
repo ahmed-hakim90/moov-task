@@ -67,36 +67,45 @@
           :price="item.price"
           :newItem="item.newitem"
           :itemName="item.name"
+          :imgSrc="'https://miro.medium.com/max/1400/1*Gb6t_tinDyyIW6H72VJmOw.jpeg' "
         ></card-item>
       </div>
     </section-category>
     <!--Small banner 2 banner -->
     <div class="row">
-
-    <div class="banner col-6 ">
-      <div class="bg-secondary">
-
-     <!-- img background -->
-     <p class="p-3 h4 text-light">
-       تابع احدث كولكشن سماعات
-     </p>
-     <button type="button" class="btn btn-main text-light pl-3 pr-3 border-0 rounded-0">
-       اقرا المزيد
-     </button>
+      <div class="banner banner-middle col-6 ">
+        <div class="bg-secondary text-right p-4">
+          <div class="content-banner">
+          
+          <!-- img background -->
+          <p class="p-4 h4 text-light ">
+            تابع احدث كولكشن سماعات
+          </p>
+          <button
+            type="button"
+            class="btn btn-main text-light pl-3 pr-3 m-2 border-0 rounded-0"
+          >
+            اقرا المزيد
+          </button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="banner col-6 "> 
-         <div class="bg-secondary">
-
-     <!-- img background -->
-     <p class="p-3 h4 text-light">
-       تابع احدث كولكشن سماعات
-     </p>
-     <button type="button" class="btn btn-main text-light pl-3 pr-3 border-0 rounded-0">
-       اقرا المزيد
-     </button>
-         </div>
-    </div>
+      <div class="banner banner-middle col-6 ">
+        <div class="bg-secondary text-right p-4 ">
+          <div class="content-banner">
+            <!-- img background -->
+            <p class="p-4 h4 text-light ">
+              تابع احدث كولكشن سماعات
+            </p>
+            <button
+              type="button"
+              class="btn btn-main text-light pl-4 pr-4 m-2 border-0 rounded-0"
+            >
+              اقرا المزيد
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- here section top sell 8 items -->
     <section-category>
@@ -179,26 +188,74 @@ export default {
     ],
     // item top sell in our store
     itemsTopSell: [
-      { name: "اسم المنتج يعرض هنا", price: "250.00", newitem: true,img:phones },
-      { name: "اسم المنتج يعرض هنا", price: "25.00", newitem: false ,img:phones},
-      { name: "اسم المنتج يعرض هنا", price: "150.00", newitem: true ,img:phones},
-      { name: "اسم المنتج يعرض هنا", price: "60.00", newitem: true ,img:phones},
-      { name: "اسم المنتج يعرض هنا", price: "71.85", newitem: true ,img:phones},
-      { name: "اسم المنتج يعرض هنا", price: "250.00", newitem: true ,img:phones},
-      { name: "اسم المنتج يعرض هنا", price: "1007.00", newitem: true ,img:phones},
-      { name: "اسم المنتج يعرض هنا", price: "99.00", newitem: false ,img:phones},
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "250.00",
+        newitem: true,
+        img: phones,
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "25.00",
+        newitem: false,
+        img: phones,
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "150.00",
+        newitem: true,
+        img: phones,
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "60.00",
+        newitem: true,
+        img: phones,
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "71.85",
+        newitem: true,
+        img: phones,
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "250.00",
+        newitem: true,
+        img: phones,
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "1007.00",
+        newitem: true,
+        img: phones,
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "99.00",
+        newitem: false,
+        img: phones,
+      },
     ],
     // for section chioce for u
     itemsChoiceForU: [
-      { name: "اسم المنتج يعرض هنا", price: "250.00", newitem: true ,img:pcs},
-      { name: "اسم المنتج يعرض هنا", price: "25.00", newitem: false ,img:pcs},
-      { name: "اسم المنتج يعرض هنا", price: "150.00", newitem: true ,img:pcs},
-      { name: "اسم المنتج يعرض هنا", price: "60.00", newitem: true ,img:pcs},
+      { name: "اسم المنتج يعرض هنا", price: "250.00", newitem: true, img: pcs },
+      { name: "اسم المنتج يعرض هنا", price: "25.00", newitem: false, img: pcs },
+      { name: "اسم المنتج يعرض هنا", price: "150.00", newitem: true, img: pcs },
+      { name: "اسم المنتج يعرض هنا", price: "60.00", newitem: true, img: pcs },
     ],
   }),
 };
 </script>
 
-<style>
-
+<style lang="scss">
+.banner-middle {
+  .bg-secondary {
+    height: 170px;
+  }
+  .content-banner{
+    width: 75%;
+    margin:auto;
+  }
+}
 </style>

@@ -48,7 +48,7 @@
         <card-item
           :price="item.price"
           :newItem="false"
-          :itemName="item.itemName"
+          :itemName="item.name"
           :oldItem="false"
           :flexCardVertical="true"
         ></card-item>
