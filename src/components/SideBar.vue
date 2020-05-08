@@ -1,6 +1,6 @@
 <template>
   <div class="sideBar col-3 pr-0" dir="rtl">
-    <ul class="list-group pr-0 text-right">
+    <ul class="list-group shadow pr-0 text-right">
       <li class="list-group-item rounded-0 head-menu text-light">
         <font-awesome-icon icon="bars" class="text-left" />
         جميع الفئات
@@ -33,6 +33,7 @@
         <card-item
           :price="250.0"
           :newItem="false"
+          :imgSrc="imgSideBanner"
           :itemName="'اسم المنتج يعرض هنا'"
           :oldItem="true"
           :flexCardVertical="false"
@@ -75,7 +76,7 @@ export default {
   },
   data: () => ({
     discount: 50,
-    imgSideBanner: 'https://moovstore-images.s3.amazonaws.com/attachments/images/Apr/Alighanem/20200412190023_5448971586710823.webp?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2AAKYE2C2IA3FWS5%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T231454Z&X-Amz-SignedHeaders=host&X-Amz-Expires=518400&X-Amz-Signature=f98e1c21278f649ab782b2ad37d18607946ac5c3cd1be2c4beec82dfd68fb3fc',
+    imgSideBanner: 'http://icons.iconseeker.com/png/fullsize/cat/watch-cat.png',
     categories: [
       {
         name: "الذهب والفضة",

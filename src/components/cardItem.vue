@@ -22,7 +22,7 @@
     >
       <div class="image">
         <img
-          class="card-img-top bg-transparent"
+          class="card-img-top bg-transparent w-100" 
           :src="imgSrc"
           alt="item new"
         />
