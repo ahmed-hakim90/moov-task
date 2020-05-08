@@ -47,21 +47,18 @@
           </Sale>
         </div>
       </div>
-        <section-category>
-      <span slot="category-name">
-    الكترونيات
-      </span>
-       <div class="col-3 category" slot="item">
-       <card-item></card-item>
-      </div> <div class="col-3 category" slot="item">
-       <card-item></card-item>
-      </div> <div class="col-3 category" slot="item">
-       <card-item></card-item>
-      </div> <div class="col-3 category" slot="item">
-       <card-item></card-item>
-      </div>
-        </section-category>
+      <section-category>
+        <span slot="category-name">
+          الكترونيات
+        </span>
+        <div class="col-3 category" slot="item" v-for="item in items" :key="item.index"> 
+          <card-item :price="item.price" :newItem="item.newitem" :itemName="item.name"> </card-item>
+        </div>
+      </section-category>
     </div>
+    <app-footer>
+      
+    </app-footer>
   </div>
 </template>
 
@@ -73,6 +70,7 @@ import LeftSide from "./components/LeftSideFromSideBar.vue";
 import Sale from "./components/Sale";
 import SectionCategory from "@/components/Section.vue";
 import CardItem from "@/components/cardItem.vue";
+import AppFooter from "@/components/AppFooter.vue";
 export default {
   name: "App",
   components: {
@@ -83,7 +81,17 @@ export default {
     Sale,
     SectionCategory,
     CardItem,
+    AppFooter
   },
+  data: () => ({
+    items:[
+      {name: 'اسم المنتج يعرض هنا', price: '200.00', newitem: true },
+      {name: 'اسم المنتج يعرض هنا', price: '150.00', newitem: true },
+      {name: 'اسم المنتج يعرض هنا', price: '50.00', newitem: true },
+      {name: 'اسم المنتج يعرض هنا', price: '350.00', newitem: true },
+
+    ]
+  }),
 };
 </script>
 
