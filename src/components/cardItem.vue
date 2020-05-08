@@ -62,11 +62,7 @@ export default {
     "price",
     "oldItem",
     "flexCardVertical",
-    {
-      imgSrc: {
-        require: true,
-      },
-    },
+    "imgSrc"
   ],
   data: () => ({}),
 };
