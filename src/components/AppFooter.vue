@@ -2,15 +2,18 @@
   <div class="footer mt-5">
     <div class="container">
       <div class="row  border-bottom">
+        <!-- here a big part in footer  with big text -->
         <div class="col-4 text-light text-right">
           <div>
             <p class="h3 head-line pb-5">
               نبذة عنا
             </p>
+            <!-- bind text from data -->
             <p class="pb-2">
               {{ msg }}
             </p>
             <p>
+              <!-- here part phone  &  numbers -->
               <font-awesome-icon icon="phone-alt" class="ml-2" />
               <span class="phone" dir="ltr">
                 997 - 8889 5552 2223 6697
@@ -21,12 +24,16 @@
               </span>
             </p>
             <p>
+              <!-- this is email part -->
               <font-awesome-icon icon="envelope" class="ml-2" />
               <span class="phone" dir="ltr">
                 Admin@domainname.com
               </span>
             </p>
+
+            <!-- here part links social media  -->
             <div class="list-group list-group-horizontal">
+               <!-- here  for loop fo btn social media -->
               <button
                 type="button"
                 class="list-group-item list-group-item-action rounded-0 border-0 text-center"
@@ -38,6 +45,7 @@
             </div>
           </div>
         </div>
+        
         <div class="col-2 text-light text-right">
           <p class="h3 head-line pb-5">
             نبذة عنا
