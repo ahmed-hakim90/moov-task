@@ -1,0 +1,29 @@
+
+$base-color-icons: #b8b8b8;
+.headAfterBar {
+  .text-warning {
+    color: #e1da22;
+  }
+  .color-secondery {
+    color: $base-color-icons;
+  }
+
+  .img-logo {
+    width: 150px;
+  }
+  .search-btn {
+    height: 50px;
+    width: 60px;
+    background-color: #66286a !important;
+    color: #fff !important;
+  }
+  .search-input {
+    height: 50px !important;
+  }
+  .fa-search {
+    transform: rotate(90deg);
+  }
+  .all-things {
+    border-color: #ced4da !important;
+  }
+}

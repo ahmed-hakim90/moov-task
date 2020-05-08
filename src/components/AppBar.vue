@@ -2,7 +2,7 @@
   <div class="border-bottom">
     <div class="container">
       <nav class="  row ">
-        <div class="nav col justify-content-start">
+        <div class="nav col pr-0 justify-content-start">
           <a class="nav-link" href="#">
             توصيل سريع يصل الي 3 ساعات
           </a>
