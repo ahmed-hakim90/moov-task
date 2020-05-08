@@ -1,10 +1,12 @@
 <template>
   <div class="sideBar col-3 pr-0" dir="rtl">
     <ul class="list-group shadow pr-0 text-right">
+      <!-- here  is head menu for  list category -->
       <li class="list-group-item rounded-0 head-menu text-light">
         <font-awesome-icon icon="bars" class="text-left" />
         جميع الفئات
       </li>
+      <!-- here for loop for show all categories -->
       <li
         class="list-group-item justify-content-between d-flex"
         v-for="cat in categories"
@@ -17,7 +19,12 @@
         <font-awesome-icon icon="angle-left" class="text-left" />
       </li>
     </ul>
+    <!-- render sale components  -->
     <sale :discount="discount">
+      <!-- 
+        here put you want img or anything 
+        with name  slot  image-item-sale
+      -->
       <img
         slot="image-item-sale"
         :src="imgSideBanner"
