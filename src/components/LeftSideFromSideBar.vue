@@ -71,14 +71,32 @@
       </div>
     </section-category>
     <!--Small banner 2 banner -->
-    <div class="banner col-6 bg-secondary"> 
+    <div class="row">
+
+    <div class="banner col-6 ">
+      <div class="bg-secondary">
+
      <!-- img background -->
-     <p class="p-3 h4">
+     <p class="p-3 h4 text-light">
        تابع احدث كولكشن سماعات
      </p>
-     <button type="button" class="btn btn-primary">
+     <button type="button" class="btn btn-main text-light pl-3 pr-3 border-0 rounded-0">
        اقرا المزيد
      </button>
+      </div>
+    </div>
+    <div class="banner col-6 "> 
+         <div class="bg-secondary">
+
+     <!-- img background -->
+     <p class="p-3 h4 text-light">
+       تابع احدث كولكشن سماعات
+     </p>
+     <button type="button" class="btn btn-main text-light pl-3 pr-3 border-0 rounded-0">
+       اقرا المزيد
+     </button>
+         </div>
+    </div>
     </div>
     <!-- here section top sell 8 items -->
     <section-category>

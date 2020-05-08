@@ -29,7 +29,7 @@
       <span slot="category-name">
         صفقات اليوم
       </span>
-      <div class="category" slot="item">
+      <div class="category" slot="item" >
         <card-item
           :price="250.0"
           :newItem="false"
@@ -43,42 +43,17 @@
       <span slot="category-name">
         احدث المنتجات
       </span>
-      <div class="col-12 category category-sideBar" slot="item">
+         <div class="col-12 category category-sideBar" slot="item" v-for="item in newProducts"
+        :key="item.index">
         <card-item
-          :price="'250.0'"
+          :price="item.price"
           :newItem="false"
-          :itemName="'اسم المنتج يعرض هنا'"
-          
+          :itemName="item.itemName"
+          :oldItem="false"
           :flexCardVertical="true"
         ></card-item>
       </div>
-      <div class="col-12 category" slot="item">
-        <card-item
-          :price="'250.0'"
-          :newItem="false"
-          :itemName="'اسم المنتج يعرض هنا'"
-          
-          :flexCardVertical="true"
-        ></card-item>
-      </div>
-      <div class="col-12 category" slot="item">
-        <card-item
-          :price="'250.0'"
-          :newItem="false"
-          :itemName="'اسم المنتج يعرض هنا'"
-          
-          :flexCardVertical="true"
-        ></card-item>
-      </div>
-      <div class="col-12 category" slot="item">
-        <card-item
-          :price="'250.0'"
-          :newItem="false"
-          :itemName="'اسم المنتج يعرض هنا'"
-          
-          :flexCardVertical="true"
-        ></card-item>
-      </div>
+     
     </section-category>
   </div>
 </template>
@@ -107,19 +82,19 @@ export default {
       },
       {
         name: "ادوات واجهزة طبية",
-        icon: "",
+        icon: "heartbeat",
       },
       {
         name: "الصيدليات والادوية",
-        icon: "",
+        icon: "allergies",
       },
       {
         name: "الساعات",
-        icon: "",
+        icon: "clock",
       },
       {
         name: "النظارات والعدسات",
-        icon: "",
+        icon: "microscope",
       },
       {
         name: "الذهب والفضة",
@@ -127,7 +102,7 @@ export default {
       },
       {
         name: "ادوات واجهزة طبية",
-        icon: "",
+        icon: "heartbeat",
       },
     ],
     newProducts:[
