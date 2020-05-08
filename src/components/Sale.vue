@@ -24,18 +24,5 @@ export default {
 </script>
 
 <style lang="scss">
-.sale {
-  position: relative;
-  .sale-bottom-side {
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 150px;
-    background-color: #ffffff87;
-    transition: all 0.355s ease-in-out;
-  }
-  &:hover .sale-bottom-side {
-    height: 100%;
-  }
-}
+
 </style>

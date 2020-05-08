@@ -1,4 +1,20 @@
 .sideBar {
+  .category-sideBar{
+    .card-body{
+      padding: 0!important;
+    }
+    .card-title{
+      font-size: 18px!important;
+    }
+    .card-text{
+      font-size: 14px!important;
+  
+    }
+    .text-rating{
+      font-size: 12px!important;
+  
+    }
+  }
   .list-group {
     .head-menu {
       background-color: #252525;

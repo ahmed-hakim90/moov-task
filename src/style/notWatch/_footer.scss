@@ -1,0 +1,19 @@
+.footer {
+    .row {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    background-color: #252525;
+    .head-line::after {
+      border-color: #66286a !important;
+    }
+    .list-group {
+      .list-group-item {
+        padding: 2px;
+        transition: all 0.3555s ease-in-out;
+        &:hover {
+          color: #66286a !important;
+        }
+      }
+    }
+  }

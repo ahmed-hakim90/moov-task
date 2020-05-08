@@ -23,7 +23,7 @@
       <div class="image">
         <img
           class="card-img-top bg-transparent"
-          :src="imgSrc"
+          src="@/assets/images/item.png"
           alt="item new"
         />
       </div>
@@ -56,39 +56,23 @@
 
 <script>
 export default {
-  props: ["newItem", "itemName", "price", "oldItem", "flexCardVertical",{imgSrc:{
-    require: true
-  }}],
+  props: [
+    "newItem",
+    "itemName",
+    "price",
+    "oldItem",
+    "flexCardVertical",
+    {
+      imgSrc: {
+        require: true,
+      },
+    },
+  ],
   data: () => ({}),
 };
 </script>
 
 <style lang="scss">
-.text-rating {
-  color: #d6d249;
-}
-.text-red {
-  color: #66286a;
-}
-.new {
-  width: 50px;
-  color: #7be070;
-}
-.new.border-bottom.border-top {
-  border-color: #7be070 !important;
-}
-.btn-primary {
-  background-color: #252525 !important;
-}
-.category:hover .btn-primary {
-  background-color: #66286a !important;
-}
-.card{
-  .d-flex.justify-content-between.align-items-center{
-    .card-img-top{
-      width:150px;
-    }
-  }
-}
+
 </style>
 }

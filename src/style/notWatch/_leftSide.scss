@@ -1,0 +1,34 @@
+.card-before-banner {
+    /* margin:-15px ; */
+    height: 80px;
+    background-color: #a580a7;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  // for item for component carditem
+  .card {
+    .text-rating {
+      color: #d6d249;
+    }
+    .text-red {
+      color: #66286a;
+    }
+    .new {
+      width: 50px;
+      color: #7be070;
+    }
+    .new.border-bottom.border-top {
+      border-color: #7be070 !important;
+    }
+    .btn-primary {
+      background-color: #252525 !important;
+    }
+    .category:hover .btn-primary {
+      background-color: #66286a !important;
+    }
+    .d-flex.justify-content-between.align-items-center {
+      .card-img-top {
+        width: 150px;
+      }
+    }
+  }  

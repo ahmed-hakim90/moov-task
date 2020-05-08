@@ -1,5 +1,13 @@
 @import "notWatch/appBar";
 @import "notWatch/headAfterBar";
+@import "notWatch/leftSide";
 @import "notWatch/sideBar";
+@import "notWatch/sale";
 @import "notWatch/global";
+@import "notWatch/footer";
 
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: rtl;
+  }

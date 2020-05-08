@@ -51,7 +51,7 @@
         <span slot="category-name">
           الكترونيات
         </span>
-        <div class="col-3 category" slot="item" v-for="item in items" :key="item.index"> 
+        <div class="col category" slot="item" v-for="item in items" :key="item.index"> 
           <card-item :price="item.price" :newItem="item.newitem" :itemName="item.name"> </card-item>
         </div>
       </section-category>
@@ -89,6 +89,7 @@ export default {
       {name: 'اسم المنتج يعرض هنا', price: '150.00', newitem: true },
       {name: 'اسم المنتج يعرض هنا', price: '50.00', newitem: true },
       {name: 'اسم المنتج يعرض هنا', price: '350.00', newitem: true },
+      {name: 'اسم المنتج يعرض هنا', price: '350.00', newitem: true },
 
     ]
   }),
@@ -96,9 +97,5 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  direction: rtl;
-}
+
 </style>

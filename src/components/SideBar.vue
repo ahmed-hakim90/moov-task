@@ -141,20 +141,5 @@ export default {
 </script>
 
 <style lang="scss">
-.category-sideBar{
-  .card-body{
-    padding: 0!important;
-  }
-  .card-title{
-    font-size: 18px!important;
-  }
-  .card-text{
-    font-size: 14px!important;
 
-  }
-  .text-rating{
-    font-size: 12px!important;
-
-  }
-}
 </style>

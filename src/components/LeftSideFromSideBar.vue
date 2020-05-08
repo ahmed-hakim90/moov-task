@@ -70,7 +70,16 @@
         ></card-item>
       </div>
     </section-category>
-
+    <!--Small banner 2 banner -->
+    <div class="banner col-6 bg-secondary"> 
+     <!-- img background -->
+     <p class="p-3 h4">
+       تابع احدث كولكشن سماعات
+     </p>
+     <button type="button" class="btn btn-primary">
+       اقرا المزيد
+     </button>
+    </div>
     <!-- here section top sell 8 items -->
     <section-category>
       <span slot="category-name">
@@ -173,17 +182,5 @@ export default {
 </script>
 
 <style>
-.card-before-banner {
-  /* margin:-15px ; */
-  height: 80px;
-  background-color: #a580a7;
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-.col-4:last-of-type {
-  padding-left: 0;
-}
-.category {
-  margin-bottom: 15px;
-}
+
 </style>
