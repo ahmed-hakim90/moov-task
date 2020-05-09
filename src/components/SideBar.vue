@@ -38,7 +38,7 @@
       <span slot="category-name">
         صفقات اليوم
       </span>
-      <div class="category" slot="item" >
+      <div class="category col" slot="item">
         <card-item
           :price="250.0"
           :newItem="false"
@@ -56,8 +56,12 @@
       <span slot="category-name">
         احدث المنتجات
       </span>
-         <div class="col-12 category category-sideBar" slot="item" v-for="item in newProducts"
-        :key="item.index">
+      <div
+        class="col-12 category category-sideBar"
+        slot="item"
+        v-for="item in newProducts"
+        :key="item.index"
+      >
         <card-item
           :price="item.price"
           :newItem="false"
@@ -67,7 +71,6 @@
           :flexCardVertical="true"
         ></card-item>
       </div>
-     
     </section-category>
   </div>
 </template>
@@ -82,53 +85,71 @@ export default {
   components: {
     Sale,
     SectionCategory,
-    CardItem,
+    CardItem
   },
   data: () => ({
     discount: 50,
-    imgSideBanner: 'http://icons.iconseeker.com/png/fullsize/cat/watch-cat.png',
-    //for section categories in top  side bar 
+    imgSideBanner: "http://icons.iconseeker.com/png/fullsize/cat/watch-cat.png",
+    //for section categories in top  side bar
     categories: [
       {
         name: "الذهب والفضة",
-        icon: "hand-holding-heart",
+        icon: "hand-holding-heart"
       },
       {
         name: "ادوات واجهزة طبية",
-        icon: "heartbeat",
+        icon: "heartbeat"
       },
       {
         name: "الصيدليات والادوية",
-        icon: "allergies",
+        icon: "allergies"
       },
       {
         name: "الساعات",
-        icon: "clock",
+        icon: "clock"
       },
       {
         name: "النظارات والعدسات",
-        icon: "microscope",
+        icon: "microscope"
       },
       {
         name: "الذهب والفضة",
-        icon: "hand-holding-heart",
+        icon: "hand-holding-heart"
       },
       {
         name: "ادوات واجهزة طبية",
-        icon: "heartbeat",
-      },
+        icon: "heartbeat"
+      }
     ],
-    //for section new product 
-    newProducts:[
-      { name: "اسم المنتج يعرض هنا", price: "250.00", newitem: true ,flexCardVertical:true , },
-      { name: "اسم المنتج يعرض هنا", price: "25.00", newitem: true ,flexCardVertical:true,},
-      { name: "اسم المنتج يعرض هنا", price: "150.00", newitem: true ,flexCardVertical:true,},
-      { name: "اسم المنتج يعرض هنا", price: "60.00", newitem: true ,flexCardVertical:true,},
+    //for section new product
+    newProducts: [
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "250.00",
+        newitem: true,
+        flexCardVertical: true
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "25.00",
+        newitem: true,
+        flexCardVertical: true
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "150.00",
+        newitem: true,
+        flexCardVertical: true
+      },
+      {
+        name: "اسم المنتج يعرض هنا",
+        price: "60.00",
+        newitem: true,
+        flexCardVertical: true
+      }
     ]
-  }),
+  })
 };
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

@@ -32,9 +32,9 @@
 export default {
   props: {
     discount: {
-      require: true,
-    },
-  },
+      require: true
+    }
+  }
 };
 </script>
 

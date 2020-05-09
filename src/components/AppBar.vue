@@ -1,8 +1,11 @@
 <template>
-  <div class="border-bottom">
-    <div class="container">
-      <nav class="  row ">
-        <div class="nav col pr-0 justify-content-start">
+  <div class="border-bottom" :class="headAppFixied ? 'mobail bg-white' : ''">
+    <div :class="headAppFixied ? 'container-fluid' : 'container'">
+      <nav class="row">
+        <div
+          class="nav col-12 col-lg-6 pr-0 justify-content-center justify-content-lg-start"
+          v-if="!headAppFixied"
+        >
           <a class="nav-link" href="#">
             توصيل سريع يصل الي 3 ساعات
           </a>
@@ -12,7 +15,9 @@
           </a>
         </div>
 
-        <div class="nav col justify-content-end">
+        <div
+          class="nav col-12 col-lg-6 justify-content-center justify-content-lg-end"
+        >
           <a class="nav-link " href="#">
             تسجيل
           </a>
@@ -38,6 +43,35 @@
 export default {
   data: () => ({
     selected: "EN",
+    headAppFixied: false,
+    width: 0
   }),
+  created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.width = window.innerWidth;
+      if (this.width <= 755) {
+        this.headAppFixied = true;
+        console.log(this.headAppFixied);
+      } else {
+        this.headAppFixied = false;
+      }
+    }
+  }
 };
 </script>
+<style lang="scss">
+.mobail {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+</style>

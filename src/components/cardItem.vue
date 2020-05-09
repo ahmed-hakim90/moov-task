@@ -22,7 +22,7 @@
     >
       <div class="image">
         <img
-          class="card-img-top bg-transparent w-100" 
+          class="card-img-top bg-transparent w-100"
           :src="imgSrc"
           alt="item new"
         />
@@ -64,11 +64,9 @@ export default {
     "flexCardVertical",
     "imgSrc"
   ],
-  data: () => ({}),
+  data: () => ({})
 };
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
 }
