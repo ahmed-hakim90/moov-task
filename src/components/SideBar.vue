@@ -32,6 +32,8 @@
         alt="side sale bottom side bar"
       />
     </sale>
+
+    <!-- section deals for side bar  -->
     <section-category>
       <span slot="category-name">
         صفقات اليوم
@@ -47,6 +49,9 @@
         ></card-item>
       </div>
     </section-category>
+
+    <!-- section new products for side bar  -->
+
     <section-category>
       <span slot="category-name">
         احدث المنتجات
@@ -72,9 +77,7 @@
 import Sale from "@/components/Sale.vue";
 import SectionCategory from "@/components/Section.vue";
 import CardItem from "@/components/cardItem.vue";
-// import image from assers to  show it in com
 
-import laptops from"@/assets/images/laptops.png";
 export default {
   components: {
     Sale,
@@ -84,6 +87,7 @@ export default {
   data: () => ({
     discount: 50,
     imgSideBanner: 'http://icons.iconseeker.com/png/fullsize/cat/watch-cat.png',
+    //for section categories in top  side bar 
     categories: [
       {
         name: "الذهب والفضة",
@@ -114,11 +118,12 @@ export default {
         icon: "heartbeat",
       },
     ],
+    //for section new product 
     newProducts:[
-      { name: "اسم المنتج يعرض هنا", price: "250.00", newitem: true ,flexCardVertical:true ,img:laptops },
-      { name: "اسم المنتج يعرض هنا", price: "25.00", newitem: true ,flexCardVertical:true,img:laptops},
-      { name: "اسم المنتج يعرض هنا", price: "150.00", newitem: true ,flexCardVertical:true,img:laptops},
-      { name: "اسم المنتج يعرض هنا", price: "60.00", newitem: true ,flexCardVertical:true,img:laptops},
+      { name: "اسم المنتج يعرض هنا", price: "250.00", newitem: true ,flexCardVertical:true , },
+      { name: "اسم المنتج يعرض هنا", price: "25.00", newitem: true ,flexCardVertical:true,},
+      { name: "اسم المنتج يعرض هنا", price: "150.00", newitem: true ,flexCardVertical:true,},
+      { name: "اسم المنتج يعرض هنا", price: "60.00", newitem: true ,flexCardVertical:true,},
     ]
   }),
 };

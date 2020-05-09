@@ -3,15 +3,22 @@
     <div class="container margin-top-4">
       <div class="row justify-content-start pr-0">
         <div class="col-3 text-right pr-0">
+          <!-- 
+            this is img logo in after nav  in right top
+           -->
           <img
             class="img-logo "
             src="@/assets/logo.webp"
             alt="logo moov biycle"
           />
         </div>
+        <!-- 
+          here input and 2 button  1 for categories and 1 for submit search
+         -->
         <div class="col-7">
           <div class="input-group ">
             <div class="input-group-prepend">
+              <!-- here button dropdown list for select item -->
               <button
                 class="btn btn-outline-secondary all-things border-left-0 rounded-0 dropdown-toggle"
                 type="button"

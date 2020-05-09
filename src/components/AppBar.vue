@@ -22,22 +22,12 @@
           </a>
 
           <a class="nav-link active" href="#"> البيع علي منصة موف ستور </a>
-
-          <div class="dropdown">
-            <button
-              class="btn  dropdown-toggle"
-              type="button"
-              id="Language"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              EN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="Language">
-              <a class="dropdown-item" href="#">AR</a>
-            </div>
-          </div>
+          <!-- here intaractive lang switch if you wants -->
+          <select class="bg-transparent border-0" v-model="selected">
+            <option value="EN">EN</option>
+            <option value="AR">AR</option>
+            <option value="GR">GR</option>
+          </select>
         </div>
       </nav>
     </div>
@@ -45,5 +35,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    selected: "EN",
+  }),
+};
 </script>
